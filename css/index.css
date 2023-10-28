@@ -1,12 +1,12 @@
 :root{
-    --borders-color:#D9D6C7;
-    --font-color:#011126;
-    --principal-color:#39594D;
-    --secundary-color:#4C735D;
-    --terciary-color:#8ABF92;
+    --font-color:#D9D6C7;
+    --principal-color:#183153;
+    --secundary-color:#283d5b;
+    --terciary-color:#4b6282;
 }
 *{
     font-size: 8px;
+    color:var(--font-color)
 }
 .header{
     background-image: url(../img/banner_header_mobile.jpg);
@@ -14,10 +14,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
 .menuIcon{
     width: 60px;
@@ -32,20 +32,70 @@
 }
 
 .header_button{
-    backdrop-filter: blur(40px);
-    background-color: #4d5c71;
-    color: var(--borders-color);
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: center;
-    width:10rem;
-    height: 5rem;
-    border: 2px solid var(--borders-color);
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+   }
+   
+   button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
 
 @media screen and (min-width:1040px) {
     *{
@@ -53,7 +103,6 @@
     }
     .header{
         background-image: url(../img/banner_header.jpg);
-        
     }
     .header__buttons{
         flex-direction: row;
