@@ -1,102 +1,132 @@
-.header__menu{
-    display: flex;
-    justify-content: space-between;
+header {
+  background-color: var(--principal-color);
+  display: flex;
+  justify-content: center;
 }
-.header__logo{
-    margin-left: 1rem;
-    margin-top: 1rem;
-    width: 7rem;
-    height: 5rem;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
-}
-.header__menu-item{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: .5s;
-}
-.header__menu-item.active{
-    transition: .5s;
-    background-color: var(--principal-color);
-    padding: 1rem;
-    border-radius: 0 0 0 20px;
-    border-bottom: 1px solid yellow;
-    border-left: 2px solid yellow;
-}
-.header__menu-options{
-    font-size: 2rem;
-}
-.header__menu-list{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    font-weight: 700;
-    display: none;
-    transition: .5s;
-}
-.header__menu-item.active .header__menu-list{
-    transition: .5s;
-    display: flex;
-}
-.hamburger {
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .hamburger input {
-    display: none;
-  }
-  
-  .hamburger svg {
-    /* The size of the SVG defines the overall size */
-    height: 5rem;
-    /* Define the transition for transforming the SVG */
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line {
-    fill: none;
-    stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line-top-bottom {
-    stroke-dasharray: 12 63;
-  }
-  
-  .hamburger input:checked + svg {
-    transform: rotate(-45deg);
-  }
-  
-  .hamburger input:checked + svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-  }
 
-  @media screen and (min-width:1040px) {
-    .header__menu{
-        justify-content: center;
-    }
-    .header__logo{
-        position: absolute;
-        left: 0;
-    }
-    .hamburger{
-        display: none;
-    }
-    .header__menu-list{
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        font-size: 3rem;
-    }
+.header {
+  max-width: 1040px;
+   width: 100%;
+  padding: .5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo {
+  width: 6rem;
+  height: 4rem;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
+}
+
+.header__nav {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  transition: .5s;
+}
+
+.header__nav-options {
+  width: 70px;
+  font-size: 2rem;
+  position: absolute;
+  top: 108%;
+  left: 20vw;
+  width: 120px;
+  transition: 1s;
+}
+
+.header__nav-options.active {
+  left: -10vw;
+  transition: .5s;
+  background-color: var(--principal-color);
+  padding: 1rem;
+  border-radius: 0 0 0 20px;
+  border-bottom: 1px solid yellow;
+  border-left: 2px solid yellow;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 5rem;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+@media screen and (min-width:1040px) {
+  .header{
+    justify-content: center;
   }
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: .5rem 0 0 1rem;
+  }
+  .header__nav {
+    width: 100%;
+    flex-direction: row;
+  }
+  .hamburger {
+    display: none;
+  }
+  .header__nav-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    position: relative;
+    top: initial;
+    left: initial;
+    margin:1rem 0 1rem
+  }
+  .header__nav-list {
+    flex-direction: row;
+  }
+}
