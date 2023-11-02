@@ -109,71 +109,6 @@ button:hover span {
     background-color: var(--secundary-color);
 }
 
-.differentials__container {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1400px;
-}
-
-.differentials__list {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.differentials__list-item h3 {
-    font-size: 1.5rem;
-}
-
-.differentials__list-item {
-    background-color: var(--terciary-color);
-    width: 350px;
-    border: 1px solid var(--font-color);
-    border-radius: 20px;
-}
-.differentials__acordeon{
-    flex-shrink: 0;
-}
-.differentials__acordeon img {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
-    width: 60px;
-    height: 60px;
-}
-
-#toggler {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
-    width: 30px;
-    height: 30px;
-    transition: .5s;
-}
-
-.differentials__acordeon div {
-    display: flex;
-    align-items: center;
-    padding: .5rem 1rem;
-}
-
-.differentials__acordeon p {
-    display: none;
-    color: #FFD401;
-    padding: .5rem;
-   
-}
-
-.differentials__acordeon.active p {
-   
-    display: block;
-    color: #FFD401;
-}
-.differentials__acordeon.active #toggler{
-    transform: rotate(180deg);
-   transition: .5s;
-    
-}
-
 @media screen and (min-width:1040px) {
     * {
         font-size: 16px;
@@ -181,13 +116,5 @@ button:hover span {
 
     .hero {
         background-image: url(../img/banner_header.jpg);
-    }
-    .differentials__list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .differentials__list h3{
-        width: 100%;
     }
 }
