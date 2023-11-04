@@ -1,13 +1,20 @@
 .modalities {
     display: flex;
     justify-content: center;
-    background: rgb(40, 61, 91);
-    background: linear-gradient(184deg, rgba(40, 61, 91, 1) 0%, rgba(40, 61, 91, 1) 46%, rgba(75, 98, 130, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(184deg, rgba(40, 61, 91) 0%, rgba(40, 61, 91) 46%, rgba(75, 98, 130) 100%);
 }
-.modalities__title{
+.modalities .container{
+
+    background-image: linear-gradient(rgba(40, 61, 91, 0.8) 0%, rgba(40, 61, 91, 0.8) 46%, rgba(75, 98, 130, 0.8) 100%), url('../img/piso_de_borracha_grao_de_arroz.jpg');
+    background-size: 300px;
+}
+.modalities__title {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
 .modalities__types {
     display: flex;
     flex-direction: column;
@@ -22,7 +29,8 @@
     gap: 1rem;
     margin-bottom: 1px solid #fff;
 }
-.modalities__types-item div{
+
+.modalities__types-item div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,21 +45,25 @@
     height: auto;
 
 }
-.modalities__types-item p{
+
+.modalities__types-item p {
     height: 50px;
     overflow: hidden;
     transition: 1s;
 }
-.modalities__types-item p.active{
+
+.modalities__types-item p.active {
     height: initial;
     overflow: initial;
     transition: 1s;
 }
-.modalities__types-button{
+
+.modalities__types-button {
     width: 75px;
-    background-color:#3c8d8d;
+    background-color: #3c8d8d;
     font-weight: 700;
 }
+
 @media screen and (min-width:1040px) {
 
     .modalities__types-item {
@@ -60,40 +72,47 @@
         gap: 1rem;
         height: 200px;
         text-align: left;
-        
+
     }
-    .modalities__types-item:hover img{
+
+    .modalities__types-item:hover img {
         transform: rotate(10deg);
-        transition:.5s;
-       
+        transition: .5s;
+
     }
-    .modalities__types-item:nth-child(odd):hover img{
+
+    .modalities__types-item:nth-child(odd):hover img {
         transform: rotate(-10deg);
-        transition:.5s;
+        transition: .5s;
     }
-    .modalities__types-item:nth-child(odd){
+
+    .modalities__types-item:nth-child(odd) {
         flex-direction: row-reverse;
         text-align: right;
     }
 
-    .modalities__types-item div{
+    .modalities__types-item div {
         align-items: initial;
 
     }
 
     .modalities__types-item img {
-        transition:.5s;
+        transition: .5s;
         border-radius: 15px;
         width: 100%;
         height: 100%;
     }
-    .modalities__types-item p{
+
+    .modalities__types-item p {
+        font-weight: 500;
+        font-size: 1.2rem;
         height: initial;
         overflow: initial;
         transition: 1s;
     }
-    .modalities__types-button{
+
+    .modalities__types-button {
         display: none;
     }
-    
+
 }
