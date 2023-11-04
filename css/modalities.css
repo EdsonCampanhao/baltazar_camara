@@ -1,0 +1,8 @@
+.modalities{
+    background: rgb(40,61,91);
+    background: linear-gradient(184deg, rgba(40,61,91,1) 0%, rgba(40,61,91,1) 46%, rgba(75,98,130,1) 100%);
+}
+.modalities__title{
+    margin-top: 2rem;
+    text-align: center;
+}

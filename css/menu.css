@@ -11,7 +11,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .header__logo {
@@ -29,11 +28,12 @@ header {
 }
 
 .header__nav-options {
+  overflow: hidden;
   width: 70px;
   font-size: 2rem;
   position: absolute;
   top: 108%;
-  left: 20vw;
+  left: 60vw;
   width: 120px;
   transition: 1s;
 }
