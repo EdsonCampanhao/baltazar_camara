@@ -21,7 +21,7 @@ header {
 }
 .hamburger{
   width: 64px;
-  height: 70px;
+  height: 69px;
 }
 
 .header__nav {
@@ -38,13 +38,13 @@ header {
   font-size: 2rem;
   position: absolute;
   top: 100%;
-  left: 60vw;
+  left: 100PX;
   width: 120px;
   transition: 1s;
 }
 
 .header__nav-options.active {
-  left: -10vw;
+  left: -75PX;
   transition: .5s;
   background-color: var(--principal-color);
   padding: 1rem;
