@@ -1,0 +1,29 @@
+const comments = {
+    0: {
+        image: "https://github.com/EdsonCampanhao.png",
+        name: "Gabryel Campanhão",
+        comment: "Ótimo atendimento, muito solicita e educada"
+    },
+    1: {
+        image: "https://github.com/lucas.png",
+        name: "Lucas",
+        comment: "o cara é diferenciado"
+    },
+    2: {
+        image: "https://github.com/gabriela.png",
+        name: "Roberta",
+        comment: "fez milagra comigo"
+    },
+    3: {
+        image: "https://github.com/ronald.png",
+        name: "Ronald",
+        comment: "paciente e educado com quem está começando, recomendo"
+    },
+    4: {
+        image: "https://github.com/neymar.png",
+        name: "neymar",
+        comment: "pensa em um cara que sabe treinar, ele é esse cara"
+    },
+}
+
+export default comments
