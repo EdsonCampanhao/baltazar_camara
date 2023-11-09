@@ -28,12 +28,15 @@ h7 {
 
 .hero {
     width: 100vw;
+    box-sizing: border-box;
+    height: 90vh;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
+    padding-bottom: 4rem;
 }
 .hero__link {
     text-decoration: none;
@@ -97,10 +100,9 @@ button:hover span {
 
 .hero {
     background-image: url(../img/banner_header_mobile.jpg);
-    background-position: center;
+    background-position: center 0px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 850px;
 }
 
 .differentials {

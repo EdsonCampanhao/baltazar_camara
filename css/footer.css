@@ -1,0 +1,27 @@
+.footer{
+    box-shadow: -1px -6px 5px -1px rgba(232,232,232,0.75);
+    -webkit-box-shadow: -1px -6px 5px -1px rgba(232,232,232,0.75);
+    -moz-box-shadow: -1px -6px 5px -1px rgba(232,232,232,0.75);
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    justify-content: center;
+    
+}
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+
+.footer__button-icon{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
+    width: 60px;
+}
+.footer__text{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--principal-color);
+}

@@ -6,7 +6,8 @@ header {
 
 .header {
   max-width: 1040px;
-   width: 100%;
+  width: 100%;
+  height: 8vh;
   padding: .5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -14,9 +15,13 @@ header {
 }
 
 .header__logo {
-  width: 6rem;
-  height: 4rem;
+  width: 4rem;
+  height: 3rem;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
+}
+.hamburger{
+  width: 64px;
+  height: 69px;
 }
 
 .header__nav {
@@ -32,14 +37,14 @@ header {
   width: 70px;
   font-size: 2rem;
   position: absolute;
-  top: 108%;
-  left: 60vw;
+  top: 100%;
+  left: 100PX;
   width: 120px;
   transition: 1s;
 }
 
 .header__nav-options.active {
-  left: -10vw;
+  left: -75PX;
   transition: .5s;
   background-color: var(--principal-color);
   padding: 1rem;
