@@ -4,17 +4,20 @@
     align-items: center;
     gap: 1.3rem;
 }
+
 .differentials__list h2 {
-    font-size: 1.3rem;
+
     text-align: center;
 }
-.differentials__list-container{
+
+.differentials__list-container {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
+
 .differentials__list-item {
     padding: .5rem 1rem;
     border-radius: 133px 58px 135px 58px;
@@ -51,7 +54,7 @@
 
 .title {
     pointer-events: none;
-    font-size: 1rem;
+
 }
 
 .differentials__selected {
@@ -60,30 +63,33 @@
     border-left: 1px solid #ffffff;
     padding: 1rem .5rem;
     border-radius: 50px;
-    margin-top:2rem;
+    margin-top: 2rem;
 }
+
 .differentials__selected {
-    
+
     display: none;
 
 }
-.differentials__selected.active{
+
+.differentials__selected.active {
     display: block;
 }
 
 .differentials__selected .title {
     text-align: center;
-    font-size: 1.5rem;
+
     margin-bottom: 1rem;
 }
 
 .differentials__selected p {
     text-align: center;
 }
+
 @media screen and (min-width:1040px) {
-    .differentials__list-container{
+    .differentials__list-container {
         flex-direction: row;
-       
+
     }
-    
+
 }

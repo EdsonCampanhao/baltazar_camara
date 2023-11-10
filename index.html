@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="./css/modalities.css">
     <link rel="stylesheet" href="./css/comments.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Baltazar Câmara</title>
 </head>
 
@@ -41,7 +48,7 @@
     </header>
     <main>
         <section class="hero">
-            
+
             <a class="hero__link" href="https:www.google.com"><button class="hero__button"> <span>Me contrate!
                     </span></button></a>
         </section>
@@ -52,28 +59,27 @@
                 <ul class="differentials__list">
 
 
-                    <h2>Permita-me compartilhar com você alguns dos diferenciais que tornam minha orientação tão
-                        especial: </h2>
+                    <h2>alguns dos diferenciais meus diferenciais: </h2>
 
                     <div class="differentials__list-container">
 
                         <li class="differentials__list-item" data-type="pilates">
 
                             <img class="icon" src="./img/pilates.png" alt="icone de pilates">
-                            <h3 class="title">Pilates para Fortalecimento e Flexibilidade</h3>
+                            <p class="title">formação em Pilates </p>
                         </li>
                         <li class="differentials__list-item" data-type="atendimentoEspecializado">
                             <img class="icon" src="./img/target.png"
                                 alt="icone de atendimento para pessoas com baixa mobilidade e terceira idade">
-                            <h3 class="title">Apoio Especializado à idosos e Pessoas com Baixa Mobilidade</h3>
+                            <p class="title">Apoio Especial com idosos</p>
                         </li>
                         <li class="differentials__list-item" data-type="academiaPreferida">
                             <img class="icon" src="./img/gym.png" alt="icone de atendimento na sua academia de escolha">
-                            <h3 class="title">Atendimento na Sua Academia de Escolha</h3>
+                            <p class="title">Atendimento na Sua Academia</p>
                         </li>
                         <li class="differentials__list-item" data-type="maisTreinos">
                             <img class="icon" src="./img/body.png" alt="icone de mais de 20 treinos disponíveis">
-                            <h3 class="title">Acesso a Mais de 20 Treinos Diferentes </h3>
+                            <p class="title">Mais de 20 Treinos Diferente </p>
                         </li>
 
                     </div>
@@ -97,12 +103,10 @@
                             <p>A musculação, um dos métodos mais eficazes para alcançar o corpo dos seus sonhos, oferece
                                 inúmeras vantagens. Com a prática regular, você não apenas construirá músculos definidos
                                 e aumentará sua força, mas também acelerará seu metabolismo, auxiliando na queima de
-                                gordura. Além disso, o treinamento de força melhora a saúde óssea e promove um estilo de
-                                vida ativo e saudável. Invista em si mesmo hoje e comece sua jornada de transformação
-                                com a musculação. Seja a melhor versão de você mesmo!
+                                gordura.
 
                             </p>
-                            <button class="modalities__types-button"> ler mais</button>
+
                         </div>
                     </li>
                     <li class="modalities__types-item">
@@ -114,10 +118,8 @@
                                 O CrossFit, uma abordagem de treinamento intensa e multifuncional, é a chave para
                                 alcançar um corpo incrivelmente ágil e resistente. Esta modalidade não só desafia os
                                 seus limites, mas também melhora a força, resistência e condicionamento físico geral.
-                                Com treinos variados que incluem movimentos funcionais, como levantamento de peso,
-                                corrida e ginástica, o CrossFit promove uma transformação completa do seu corpo e mente.
                             </p>
-                            <button class="modalities__types-button"> ler mais</button>
+
                         </div>
 
 
@@ -130,9 +132,8 @@
                             <p>O treino funcional, uma modalidade de exercícios adaptáveis e de baixo impacto, é
                                 especialmente amigável para idosos. Com movimentos que imitam atividades diárias, ele
                                 melhora a força, equilíbrio e mobilidade, tornando as tarefas cotidianas mais fáceis e
-                                seguras. A abordagem simples e personalizável do treino funcional permite que idosos
-                                mantenham uma vida ativa e saudável, adaptando-se às suas necessidades individuais. </p>
-                            <button class="modalities__types-button"> ler mais</button>
+                                seguras. </p>
+
                         </div>
 
                     </li>
@@ -145,10 +146,8 @@
                                 A calistenia é uma forma de treinamento que utiliza o peso corporal e exercícios como
                                 flexões, barras fixas e pranchas para construir força, resistência e flexibilidade. É
                                 uma modalidade versátil e desafiadora que oferece inúmeras opções para aprimorar a
-                                aptidão física e alcançar um corpo mais forte e saudável. Com a calistenia, você pode se
-                                superar e alcançar seus objetivos de forma eficaz, tudo isso sem a necessidade de
-                                equipamentos sofisticados.</p>
-                            <button class="modalities__types-button"> ler mais</button>
+                                aptidão física e alcançar um corpo mais forte e saudável. </p>
+
                         </div>
                     </li>
                 </ul>
@@ -157,20 +156,42 @@
         <section class="comments">
             <div class="container">
                 <h2 class="comments__title">Comentários</h2>
-                <div class="comments__container">
-
-                    <img src="./img/seta-d.png" class="comments__arrow left" data-direction="left" alt="icon arrow">
-
-                    <article class="comments__card">
-                        <img class="comments__img-profile" src="https://github.com/EdsonCampanhao.png" alt="Foto do usuário">
-                        <h3>Gabryel Campanhão</h3>
-                        <p> Ótimo atendimento, muito solicita e educada</p>
-                    </article>
-
-                    <img src="./img/seta-d.png" class="comments__arrow right" alt="icon arrow">
-
+                <div class="your-class">
+                    <div>
+                        <article class="comments__card">
+                            <img class="comments__img-profile" src="https://github.com/antonio.png"
+                                alt="Foto do usuário">
+                            <h3>Robson Lopes</h3>
+                            <p> Ótimo atendimento, muito solicito e educada</p>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="comments__card">
+                            <img class="comments__img-profile" src="https://github.com/robert.png"
+                                alt="Foto do usuário">
+                            <h3>Anastácio Fontes</h3>
+                            <p> obtive ótimos resultados treinando com ele</p>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="comments__card">
+                            <img class="comments__img-profile" src="https://github.com/amanda.png"
+                                alt="Foto do usuário">
+                            <h3>Vera Câmara</h3>
+                            <p> coisinha linda da tia</p>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="comments__card">
+                            <img class="comments__img-profile" src="https://github.com/victorhugo.png"
+                                alt="Foto do usuário">
+                            <h3>Victor Hugo</h3>
+                            <p> O cara treina pesado demaaaais XD</p>
+                        </article>
+                    </div>
                 </div>
-                
+
+
             </div>
         </section>
     </main>
@@ -189,17 +210,27 @@
                         <img src="./img/twitter.png" alt="" class="footer__button-icon">
                     </a>
                 </div>
-                <p class="footer__text">projeto para praticar realizado por Edson Gabryel Lemos Campanhão como exercicío de prática. Todos os direitos reservados. &copy; 2023 </p>
+                <p class="footer__text">projeto para praticar! <br> Todos os direitos reservados, Edson Gabryel Lemos
+                    Campanhão &copy; 2023 </p>
             </div>
-            
+
         </section>
+
 
     </footer>
 
 </body>
 <script src="./js/menu.js"></script>
-<script src="./js/acordeon.js" type="module"></script>
-<script src="./js/modalities.js"></script>
+<script src="./js/acordeon.js"></script>
 <script src="./js/comments.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<script src="./js/text.js"></script>
 
 </html>

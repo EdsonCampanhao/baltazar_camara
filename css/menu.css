@@ -2,6 +2,17 @@ header {
   background-color: var(--principal-color);
   display: flex;
   justify-content: center;
+  box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 21;
+}
+
+.header:not(:has(.active)) {
+  /* Novos estilos para a classe header quando nenhum filho tem a classe .active */
+  overflow: hidden;
 }
 
 .header {
@@ -19,7 +30,8 @@ header {
   height: 3rem;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(102%) contrast(102%);
 }
-.hamburger{
+
+.hamburger {
   width: 64px;
   height: 69px;
 }
@@ -33,14 +45,15 @@ header {
 }
 
 .header__nav-options {
-  overflow: hidden;
+
   width: 70px;
   font-size: 2rem;
   position: absolute;
-  top: 100%;
+  top: 115%;
   left: 100PX;
   width: 120px;
   transition: 1s;
+
 }
 
 .header__nav-options.active {
@@ -51,6 +64,11 @@ header {
   border-radius: 0 0 0 20px;
   border-bottom: 1px solid yellow;
   border-left: 2px solid yellow;
+}
+
+.header__nav-item a {
+  text-decoration: none;
+
 }
 
 .header__nav-list {
@@ -104,22 +122,27 @@ header {
 }
 
 @media screen and (min-width:1040px) {
-  .header{
+  .header {
+
     justify-content: center;
   }
+
   .header__logo {
     position: absolute;
     top: 0;
     left: 0;
     margin: .5rem 0 0 1rem;
   }
+
   .header__nav {
     width: 100%;
     flex-direction: row;
   }
+
   .hamburger {
     display: none;
   }
+
   .header__nav-options {
     width: 100%;
     display: flex;
@@ -129,8 +152,9 @@ header {
     position: relative;
     top: initial;
     left: initial;
-    margin:1rem 0 1rem
+    margin: 1rem 0 1rem
   }
+
   .header__nav-list {
     flex-direction: row;
   }

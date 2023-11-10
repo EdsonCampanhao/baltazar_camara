@@ -32,7 +32,7 @@ function changeDifferential(differential) {
         ${selectedDiferential.text}
         </p>  
     `
-    selectedDiferentials.scrollIntoView({ behavior: 'smooth' });
+    selectedDiferentials.scrollIntoView({ behavior: 'smooth',block:'center' });
 }
 buttonsOfDifferentials.forEach((button)=>{button.addEventListener('click',(e)=>{
     changeDifferential(e.target.dataset.type)

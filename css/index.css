@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
 :root {
     --font-color: #D9D6C7;
     --principal-color: #183153;
@@ -7,7 +9,8 @@
 
 * { scroll-behavior: smooth;
     font-size: 16px;
-    color: var(--font-color)
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -15,9 +18,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
-h7 {
-    font-size: 2rem;
+h6{
+    text-shadow: 1px 1px 2px rgb(250, 246, 0), 0 0 1em rgb(76, 0, 255), 0 0 0.2em rgb(229, 255, 0);
+
+    font-size: 3rem;
+}
+p{
+    font-size: 1.3rem;
 }
 .container{
     max-width: 1040px;
@@ -119,5 +126,8 @@ button:hover span {
 
     .hero {
         background-image: url(../img/banner_header.jpg);
+    }
+    p{
+        font-size: 1.3rem;
     }
 }
